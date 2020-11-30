@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>【分分钟上手weiphp插件开发】Vol.3——留言板插件：Liuyanban [ 艾豆工作室 ]</title><meta name="keywords" content="艾豆工作室,豆信,网络工作室,艾豆科技,任想科技"><meta name="description" content="艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://cdn.alloyteam.com/assets/libs/bootstrapcss-098402.css"><link rel="stylesheet" href="/css/studio.css"><link rel="icon" href="http://cdn.idoustudio.com/logo1.png"></head><body><!--if lt IE 9.browserupgrade
+  .tip "Duang"，你被鄙视了，还在用这么Low的浏览器，快去升级吧！
+  .tip-author  -by AlloyTeam 
+  a(href=' http://browsehappy.osfipin.com/ ') 点我去升级
+style.
+  .main{display:none}--><div class="main"><header class="header" id="header"><div class="container"><h1 class="logo"><a class="scrollto" href="/"><span class="logo-icon-wrapper"><img class="logo-icon" src="http://cdn.idoustudio.com/logo1.png" alt="icon"></span><span class="text"><span class="highlight">艾豆工作室</span></span></a></h1><nav class="main-nav navbar-right" role="navigation"><div class="navbar-header"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="navbar-collapse collapse" id="navbar-collapse"><ul class="nav navbar-nav"><li class="nav-item"><a class="scrollto" target="_self" href="/">首页</a></li></ul></div></nav></div></header><main class="page__container page__main"><aside class="page__sidebar"><div class="sidebar__block"><h3 class="block__title">简介</h3><p class="block__text">艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。</p></div><div class="sidebar__block"><h3 class="block__title">文章分类</h3><ul class="block-list"><li class="block-list-item"><a class="block-list-link" href="/categories/技术研究/">技术研究</a><span class="block-list-count">1</span></li><li class="block-list-item"><a class="block-list-link" href="/categories/微信开发教程/">微信开发教程</a><span class="block-list-count">7</span></li><li class="block-list-item"><a class="block-list-link" href="/categories/开源项目/">开源项目</a><span class="block-list-count">4</span></li></ul></div><div class="sidebar__block"><h3 class="block__title">最新文章</h3>
+        <ul class="block-list latest-post-list">
+            
+                    <li class="latest-post-item">
+                        <a href="/2018/05/31/get-wxapkg/" title="小程序源码反编译实战笔记">
+                            <div class="item__info">
+                                <h3 class="item__title">小程序源码反编译实战笔记</h3>
+                                <span class="item__text">2018-05-31</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/05/15/hexo-theme-studio/" title="开源一款hexo工作室主题">
+                            <div class="item__info">
+                                <h3 class="item__title">开源一款hexo工作室主题</h3>
+                                <span class="item__text">2018-05-15</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/05/08/douchat4-release/" title="douchat 4.0 新版发布，助力小程序后台开发">
+                            <div class="item__info">
+                                <h3 class="item__title">douchat 4.0 新版发布，助力小程序后台开发</h3>
+                                <span class="item__text">2018-05-08</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/01/09/gonews-release/" title="基于go+vue实现的golang每日新闻数据浏览与检索平台">
+                            <div class="item__info">
+                                <h3 class="item__title">基于go+vue实现的golang每日新闻数据浏览与检索平台</h3>
+                                <span class="item__text">2018-01-09</span>
+                            </div>
+                        </a>
+                    </li>
+                
+        </ul>
+    </div><div class="sidebar__block"><h3 class="block__title">文章标签</h3>
+        <ul class="block-list tag-list clearfix">
+            
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/chrome/">chrome</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/douchat/">douchat</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/go/">go</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/hexo/">hexo</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/vue/">vue</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/weiphp插件开发/">weiphp插件开发</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/反编译/">反编译</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/小程序/">小程序</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/微信开发/">微信开发</a>
+                    </li>  
+                
+        </ul>
+    </div></aside><div class="page__content"><article class="page__post"><header class="post__info"><h1 class="post__title">【分分钟上手weiphp插件开发】Vol.3——留言板插件：Liuyanban</h1><div class="post__mark"><div class="mark__block"><i class="fa fa-user"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="http://idoustudio.com" target="_blank">艾豆工作室</a></li></ul></div><div class="mark__block"><i class="fa fa-calendar-check-o"></i><ul class="mark__list clearfix"><li class="mark__item"><span>2015-01-10</span></li></ul></div><div class="mark__block"><i class="fa fa-tag"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="/tags/weiphp插件开发/">weiphp插件开发</a></li></ul></div><div class="mark__block"><i class="fa fa-eye"></i><ul class="mark__list clearfix"><li class="mark__item" id="busuanzi_container_page_pv" style="display: inline;"><span id="busuanzi_value_page_pv">5917</span>次</li></ul></div></div></header><div class="post__content"><p>现在市面上有很多形如《xxx实战教程》、《xxx案例开发大全》之类的开发书籍，关于书的内容质量怎么样我就不多说了，呵呵一句你们就会懂的。我个人还是比较喜欢国外的编程教学类书籍，书中讲解的内容大部分都是比较严谨的，不仅讲实战，也会把原理解释得很清楚。但是国内的教程能做到这样的就很少了。回到正题上来，我们这次讲解的是weiphp留言板插件的开发流程，大家都知道，留言板是一门web开发技术入门级的案例，学习任何一门web开发技术，不管是java、php还是python、ruby之类的，要是能够写出一个留言板的实例来，那么就可以证明你算是入门了。所以我们今天就开始通过一个留言板的实例来入门weiphp插件开发。</p>
+<p>在开发此插件前，我们先来看一下这个插件的效果图，这里给大家分享一个我用bootstrap写的比较简单的留言板界面，一共两个页面：留言列表页面和发布留言页面，大家可以在我的百度云上面下载这个前台模板：<a href="http://pan.baidu.com/s/1sjFgsVF" target="_blank" rel="noopener">http://pan.baidu.com/s/1sjFgsVF</a></p>
+<p>留言列表页面</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/0.1.png" alt=""></p>
+<p>发布留言页面</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/0.2.png" alt=""></p>
+<p>看到前台效果图，我们大概知道这个插件做好之后是怎么样了，这个插件相对来说比较简单，需要用到weiphp插件模板、数据模型等。</p>
+<p>下面我们开始一步一步来完成这个插件：</p>
+<p>1、创建插件。在weiphp管理后台中创建留言板插件，把下面的安装后是否立即启用、是否需要配置、是否需要管理列表全部勾上（如果需要进行数据库操作，并且插件用到的数据库只有一个表时就勾上需要管理列表，这时候在插件管理后台就会出现数据管理列表，列表里面的内容默认会调用与插件标识名一致的数据模型进行显示，也就是说如果我们把是否需要管理列表这个选项勾上了，那么我们在创建数据模型的时候需要把数据模型命名为Liuyanban，这样的话我们就不需要对数据模型显示的方法进行重载即可调用weiphp默认的方法进行数据显示与管理，如果我们的模型名与插件标识名不一致的话，那么我们需要改写数据管理控制器，这个后面会讲到。）</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/1.1.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/1.2.png" alt=""></p>
+<p>2、安装插件。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/23.png" alt=""></p>
+<p>3、查看插件是否安装成功。在插件管理后台可以看到留言板插件已经成功安装了，因为勾选了需要配置和需要管理列表，所以这个地方能看到配置页面和数据管理页面，因为数据模型和数据列表还没有定义，所以数据管理页面并没有显示每个字段标题。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/34.png" alt=""></p>
+<p>4、创建数据模型。在weiphp管理后台依次点击“系统-&gt;模型管理-&gt;新增”，进入数据模型创建页面，并创建Liuyanban数据模型。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/42.png" alt=""></p>
+<p>5、创建字段。在模型列表里面找到上一步创建好的Liuyanban数据模型，并点字段管理进入字段管理页面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/53.png" alt=""></p>
+<p>点击新增依次建立如下字段。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/5.2.png" alt=""></p>
+<p>6、定义数据列表。在模型列表页面再次找到liuyanban模型，点击编辑进入模型编辑页面；</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/6.1.png" alt=""></p>
+<p>在模型编辑页面点击设计进入列表定义页面；</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/6.2.png" alt=""></p>
+<p>按下图所示进行列表定义。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/6.3.png" alt=""></p>
+<p>7、查看数据列表。再次回到插件管理后台，可以看到列表定义的字段已经显示出来。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/72.png" alt=""></p>
+<p>8、编辑配置文件。改写config.php，添加下图所示配置项。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/81.png" alt=""></p>
+<p>回到插件管理后台，可以看到配置项成功应用。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/8.2.png" alt=""></p>
+<p>上传一张封面图片并点“确定”提交配置项。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/8.3.png" alt=""></p>
+<p>9、编写微信交互模型。在微信模型中设置当用户输入“留言板”触发此插件时回复单图文消息，跳转到留言列表页面（Liuyanban控制器下的index方法），并传递用户的openid和公众号的token两个参数。其中get_token()、get_openid()、addons_url()、get_cover_url()为weiphp封装的较为常用的方法，可以在Application/Common/Common/function.php中查看这些方法对应的用法和功能。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/91.png" alt=""></p>
+<p>10、显示前台模板。在Liuyanban控制器中新建index()和liuyan()两个方法，分别用于显示留言列表页面和发布留言页面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/9.1.png" alt=""></p>
+<p>下载前台模板文件<a href="http://pan.baidu.com/s/1sjFgsVF" target="_blank" rel="noopener">http://pan.baidu.com/s/1sjFgsVF</a>，并把文件粘贴至Liuyanban插件的模板文件夹下面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/10.2.png" alt=""></p>
+<p>11、微信调试。在微信中回复“留言板”即可响应此插件回复单图文消息。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/11.1.png" alt=""></p>
+<p>点击即可进入留言列表页面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/11.2.png" alt=""></p>
+<p>打开index.html，用U方法为“写留言”添加跳转链接，使其被点击后跳转到发布留言页面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/11.3.png" alt=""></p>
+<p>因此在留言列表页中点击“写留言”时会跳转到下图所以发布留言页面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/11.5.png" alt=""></p>
+<p>打开liuyan.html，用U方法为“看留言”添加跳转链接，使其被点击后跳转到留言列表页面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/11.4.png" alt=""></p>
+<p>经过以上几步完成了两个页面之间的相互跳转。</p>
+<p>12、发布留言。在liuyan.html页面中查看form表单中的input的name。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/12.1.png" alt=""></p>
+<p>根据name编辑liuyan方法，把留言数据插入到数据模型。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/12.2.png" alt=""></p>
+<p>13、发布留言。在发布留言页面插入几条留言。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/13.1.png" alt=""></p>
+<p>在插件管理后台可以看到所有用户发布的留言。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/13.2.png" alt=""></p>
+<p>13、编辑留言。在编辑留言的页面添加管理员回复内容。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/14.1.png" alt=""></p>
+<p>15、显示留言。编辑index方法，取出数据模型中的留言数据并赋值给变量。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/15.1.png" alt=""></p>
+<p>用volist标签循环输出留言数据。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/161.png" alt=""></p>
+<p>16、查看留言。可以看到所有的留言数据都显示出来，至此本插件开发完毕。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/151.png" alt=""></p>
+<div class="post-announce">感谢您的阅读，本文由 <a href="/">艾豆工作室</a> 版权所有。如若转载，请注明出处：艾豆工作室（<a href="/">http://idoustudio.com</a>）</div><div class="post__prevs"><div class="post__prev"><a href="/2015/01/09/weiphp-course-two/" title="【分分钟上手weiphp插件开发】Vol.2——成语接龙插件：Idioms"><i class="iconfont icon-prev">【分分钟上手weiphp插件开发】Vol.2——成语接龙插件：Idioms</i></a></div><div class="post__prev post__prev--right"><a href="/2015/04/12/weiphp-course-four/" title="【分分钟上手weiphp插件开发】Vol.4——签到插件：QianDao">【分分钟上手weiphp插件开发】Vol.4——签到插件：QianDao<i class="iconfont icon-next"></i></a></div></div></div></article></div></main><footer class="footer"><div class="container"><div class="row"><div class="col-md-5 col-sm-12 footer-info"><div class="logo-wrapper"><img class="logo" src="http://cdn.idoustudio.com/logo1.png"><span class="name">艾豆工作室</span><div class="slogan">艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。</div><div class="copyright">Copyright<span style="margin:0 3px">©</span>2020<a href="/" target="_self">深圳市任想科技有限公司</a>. All Rights Reserved.<span class="beian">粤ICP备18021766号-1</span></div></div></div><div class="col-md-2 footer-links"><h4>周边产品</h4><div class="links"><a class="link-item" href="https://www.douchat.net" target="_blank">豆信</a><a class="link-item" href="https://www.thinkwx.com" target="_blank">任想程序</a><a class="link-item" href="https://learnitwell.net" target="_blank">IT小课</a></div></div><div class="col-md-2 footer-links"><h4>友情链接</h4><div class="links"><a class="link-item" href="https://idoubi.cc" target="_blank">艾逗笔博客</a></div></div><div class="col-md-3 col-sm-12 footer-qr"><div class="row"><div class="col-md-6 col-xs-6 qr-item"><img src="http://blogcdn.idoustudio.com/pic/20201130130559.png"><p>加我微信，备注“工作室”</p></div></div></div></div></div></footer><script src="http://cdn.alloyteam.com/assets/libs/jquery-4dc834.js"></script><script src="http://cdn.alloyteam.com/assets/libs/bootstrap-1e25df.js"></script></div></body></html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>【分分钟上手weiphp插件开发】Vol.7——模拟请求技术在weiphp插件中的应用 [ 艾豆工作室 ]</title><meta name="keywords" content="艾豆工作室,豆信,网络工作室,艾豆科技,任想科技"><meta name="description" content="艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://cdn.alloyteam.com/assets/libs/bootstrapcss-098402.css"><link rel="stylesheet" href="/css/studio.css"><link rel="icon" href="http://cdn.idoustudio.com/logo1.png"></head><body><!--if lt IE 9.browserupgrade
+  .tip "Duang"，你被鄙视了，还在用这么Low的浏览器，快去升级吧！
+  .tip-author  -by AlloyTeam 
+  a(href=' http://browsehappy.osfipin.com/ ') 点我去升级
+style.
+  .main{display:none}--><div class="main"><header class="header" id="header"><div class="container"><h1 class="logo"><a class="scrollto" href="/"><span class="logo-icon-wrapper"><img class="logo-icon" src="http://cdn.idoustudio.com/logo1.png" alt="icon"></span><span class="text"><span class="highlight">艾豆工作室</span></span></a></h1><nav class="main-nav navbar-right" role="navigation"><div class="navbar-header"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="navbar-collapse collapse" id="navbar-collapse"><ul class="nav navbar-nav"><li class="nav-item"><a class="scrollto" target="_self" href="/">首页</a></li></ul></div></nav></div></header><main class="page__container page__main"><aside class="page__sidebar"><div class="sidebar__block"><h3 class="block__title">简介</h3><p class="block__text">艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。</p></div><div class="sidebar__block"><h3 class="block__title">文章分类</h3><ul class="block-list"><li class="block-list-item"><a class="block-list-link" href="/categories/技术研究/">技术研究</a><span class="block-list-count">1</span></li><li class="block-list-item"><a class="block-list-link" href="/categories/微信开发教程/">微信开发教程</a><span class="block-list-count">7</span></li><li class="block-list-item"><a class="block-list-link" href="/categories/开源项目/">开源项目</a><span class="block-list-count">4</span></li></ul></div><div class="sidebar__block"><h3 class="block__title">最新文章</h3>
+        <ul class="block-list latest-post-list">
+            
+                    <li class="latest-post-item">
+                        <a href="/2018/05/31/get-wxapkg/" title="小程序源码反编译实战笔记">
+                            <div class="item__info">
+                                <h3 class="item__title">小程序源码反编译实战笔记</h3>
+                                <span class="item__text">2018-05-31</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/05/15/hexo-theme-studio/" title="开源一款hexo工作室主题">
+                            <div class="item__info">
+                                <h3 class="item__title">开源一款hexo工作室主题</h3>
+                                <span class="item__text">2018-05-15</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/05/08/douchat4-release/" title="douchat 4.0 新版发布，助力小程序后台开发">
+                            <div class="item__info">
+                                <h3 class="item__title">douchat 4.0 新版发布，助力小程序后台开发</h3>
+                                <span class="item__text">2018-05-08</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/01/09/gonews-release/" title="基于go+vue实现的golang每日新闻数据浏览与检索平台">
+                            <div class="item__info">
+                                <h3 class="item__title">基于go+vue实现的golang每日新闻数据浏览与检索平台</h3>
+                                <span class="item__text">2018-01-09</span>
+                            </div>
+                        </a>
+                    </li>
+                
+        </ul>
+    </div><div class="sidebar__block"><h3 class="block__title">文章标签</h3>
+        <ul class="block-list tag-list clearfix">
+            
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/chrome/">chrome</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/douchat/">douchat</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/go/">go</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/hexo/">hexo</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/vue/">vue</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/weiphp插件开发/">weiphp插件开发</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/反编译/">反编译</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/小程序/">小程序</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/微信开发/">微信开发</a>
+                    </li>  
+                
+        </ul>
+    </div></aside><div class="page__content"><article class="page__post"><header class="post__info"><h1 class="post__title">【分分钟上手weiphp插件开发】Vol.7——模拟请求技术在weiphp插件中的应用</h1><div class="post__mark"><div class="mark__block"><i class="fa fa-user"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="http://idoustudio.com" target="_blank">艾豆工作室</a></li></ul></div><div class="mark__block"><i class="fa fa-calendar-check-o"></i><ul class="mark__list clearfix"><li class="mark__item"><span>2015-05-23</span></li></ul></div><div class="mark__block"><i class="fa fa-tag"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="/tags/weiphp插件开发/">weiphp插件开发</a></li></ul></div><div class="mark__block"><i class="fa fa-eye"></i><ul class="mark__list clearfix"><li class="mark__item" id="busuanzi_container_page_pv" style="display: inline;"><span id="busuanzi_value_page_pv">2379</span>次</li></ul></div></div></header><div class="post__content"><p>博主对于curl网页采集技术可谓是研究颇深，上个学期用curl技术写的一个名为“高校头条”的新闻采集系统前段时间刚刚卖出去了，同样用curl技术写的一个微信文章采集的weiphp插件“掌上头条”自发布以来已经卖出去几十个了，衷心感谢各位朋友对博主的支持，也让博主有了更高的热情在网页采集与数据挖掘这一领域更进一步的走下去。</p>
+<a id="more"></a>
+<p>博主对于curl网页采集技术可谓是研究颇深，上个学期用curl技术写的一个名为“高校头条”的新闻采集系统前段时间刚刚卖出去了，同样用curl技术写的一个微信文章采集的weiphp插件“掌上头条”自发布以来已经卖出去几十个了，衷心感谢各位朋友对博主的支持，也让博主有了更高的热情在网页采集与数据挖掘这一领域更进一步的走下去。</p>
+<p>关于curl采集技术在weiphp插件中的实际运用我前面已经写过好多篇文章了，今天要给大家讲的是模拟请求技术，说白了也是curl的一种形式，就是在自己的代码中往目标网址模拟发送数据包，从而获得所需要的内容。很多人做过的刷票、论坛批量发帖基本上都是类似的原理。</p>
+<p>在weiphp系统中，有一个自带的插件叫“智能聊天”。在插件配置界面有一个填写图灵机器人key的文本框，用户需要在图灵机器人官网申请到一个正确的key值并填入此框，才能使用图灵机器人智能聊天的功能。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/1.png" alt=""></p>
+<p>但是呢，经常有朋友反馈说图灵机器人莫名其妙的就失效了。似乎通过申请图灵机器人key来使用智能聊天功能并不是一个很好的解决方案。于是博主便去图灵机器人官网的产品体验区体验了一发。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/2.png" alt=""></p>
+<p>体验的感觉还是不错的，图灵机器人的回复还算比较智能。于是博主便想到了在weiphp插件中模拟产品体验中与图灵机器人聊天的这个过程。当用户在微信端发送关键词后，把用户的关键词模拟提交到图灵机器人的智能回复处理地址，获得图灵机器人的回复内容，然后再把内容发送给用户。整个思路还是很清晰。下来就来讲一下流程。</p>
+<p>1、先来抓个包看一下，不需要安装fiddler、firebug之类的高级抓包工具，用chrome浏览器的F12调试面板就可以了。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/3.png" alt=""></p>
+<p>2、通过抓包我们可以清晰的看到当用户发送“你吃饭没有”时，数据请求的地址是：<a href="http://www.tuling123.com/openapi/productexp.do，请求方式是：POST，带的cookie是：JSESSIONID=aaa4rSE2Lk_HZ-XBWkb2u;（后面那个cookie是cnzz的cookie，没有多大用），发送的数据是：你吃饭没有。" target="_blank" rel="noopener">http://www.tuling123.com/openapi/productexp.do，请求方式是：POST，带的cookie是：JSESSIONID=aaa4rSE2Lk_HZ-XBWkb2u;（后面那个cookie是cnzz的cookie，没有多大用），发送的数据是：你吃饭没有。</a></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/4.png" alt=""></p>
+<p>3、再来看一下接收到的数据。可以看到接收的是xml格式的数据，<content>标签里的“刚吃了”就是我们需要的数据。</content></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/5.png" alt=""></p>
+<p>4、整个与图灵机器人聊天的过程中数据包传输的过程我们已经弄清楚了，只需要写一段代码来模拟这个过程就可以获得我们所需要的数据了。那么现在还需要搞清楚的一个问题就是：聊天过程中发送的cookie是怎么来的。分析之后我们可以发现，模拟聊天过程中并没有要求我们登陆，也就是说这个cookie不是在用户登陆之后才得到的，而是访问这个聊天页面时自动生成的。所以我们只需要在模拟聊天之前访问这个页面，获得相应的cookie，然后再带着这个cookie去模拟发送数据到处理聊天的地址，就可以获得图灵机器人的回复内容了。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/6.png" alt=""></p>
+<p>5、整个思路搞清楚了，下面上代码。我们更改一下weiphp自带的智能聊天插件Chat，把模拟图灵机器人聊天的代码加上，让每次用户在微信端输入内容后，把用户输入的内容模拟发送到图灵机器人的聊天处理地址，然后通过正则表达式匹配出图灵机器人回复的内容，再把匹配出的内容回复给用户，整个微信端智能聊天过程就这么搞定了。直接上代码，看不懂的请百度 curl教程。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/7.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/8.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/9.png" alt=""></p>
+<p>6、代码写完之后只要在微信端发送内容，系统就会自动的把用户发送的内容post到图灵机器人的聊天处理地址，然后把匹配出来的内容回复给用户。妥妥的整个数据模拟请求的过程就实现了。不过由于整个数据模拟请求过程中涉及到跨域请求，内容回复可能会有一点点的延迟~</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/05/10.png" alt=""></p>
+<p>由于博主时间、精力有些，一些细节过程就没有详细写出来了，但凡有点php基础的朋友对整个过程理解起来应该不是很费劲。</p>
+<div class="post-announce">感谢您的阅读，本文由 <a href="/">艾豆工作室</a> 版权所有。如若转载，请注明出处：艾豆工作室（<a href="/">http://idoustudio.com</a>）</div><div class="post__prevs"><div class="post__prev"><a href="/2015/04/20/weiphp-course-six/" title="【分分钟上手weiphp插件开发】Vol.6——微信高级客服接口在weiphp插件中的使用"><i class="iconfont icon-prev">【分分钟上手weiphp插件开发】Vol.6——微信高级客服接口在weiphp插件中的使用</i></a></div><div class="post__prev post__prev--right"><a href="/2018/01/06/sql2struct-release/" title="SQL2Struct：一款根据sql语句自动生成golang结构体的chrome插件">SQL2Struct：一款根据sql语句自动生成golang结构体的chrome插件<i class="iconfont icon-next"></i></a></div></div></div></article></div></main><footer class="footer"><div class="container"><div class="row"><div class="col-md-5 col-sm-12 footer-info"><div class="logo-wrapper"><img class="logo" src="http://cdn.idoustudio.com/logo1.png"><span class="name">艾豆工作室</span><div class="slogan">艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。</div><div class="copyright">Copyright<span style="margin:0 3px">©</span>2020<a href="/" target="_self">深圳市任想科技有限公司</a>. All Rights Reserved.<span class="beian">粤ICP备18021766号-1</span></div></div></div><div class="col-md-2 footer-links"><h4>周边产品</h4><div class="links"><a class="link-item" href="https://www.douchat.net" target="_blank">豆信</a><a class="link-item" href="https://www.thinkwx.com" target="_blank">任想程序</a><a class="link-item" href="https://learnitwell.net" target="_blank">IT小课</a></div></div><div class="col-md-2 footer-links"><h4>友情链接</h4><div class="links"><a class="link-item" href="https://idoubi.cc" target="_blank">艾逗笔博客</a></div></div><div class="col-md-3 col-sm-12 footer-qr"><div class="row"><div class="col-md-6 col-xs-6 qr-item"><img src="http://blogcdn.idoustudio.com/pic/20201130130559.png"><p>加我微信，备注“工作室”</p></div></div></div></div></div></footer><script src="http://cdn.alloyteam.com/assets/libs/jquery-4dc834.js"></script><script src="http://cdn.alloyteam.com/assets/libs/bootstrap-1e25df.js"></script></div></body></html>

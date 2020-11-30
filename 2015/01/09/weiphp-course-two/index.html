@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>【分分钟上手weiphp插件开发】Vol.2——成语接龙插件：Idioms [ 艾豆工作室 ]</title><meta name="keywords" content="艾豆工作室,豆信,网络工作室,艾豆科技,任想科技"><meta name="description" content="艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://cdn.alloyteam.com/assets/libs/bootstrapcss-098402.css"><link rel="stylesheet" href="/css/studio.css"><link rel="icon" href="http://cdn.idoustudio.com/logo1.png"></head><body><!--if lt IE 9.browserupgrade
+  .tip "Duang"，你被鄙视了，还在用这么Low的浏览器，快去升级吧！
+  .tip-author  -by AlloyTeam 
+  a(href=' http://browsehappy.osfipin.com/ ') 点我去升级
+style.
+  .main{display:none}--><div class="main"><header class="header" id="header"><div class="container"><h1 class="logo"><a class="scrollto" href="/"><span class="logo-icon-wrapper"><img class="logo-icon" src="http://cdn.idoustudio.com/logo1.png" alt="icon"></span><span class="text"><span class="highlight">艾豆工作室</span></span></a></h1><nav class="main-nav navbar-right" role="navigation"><div class="navbar-header"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="navbar-collapse collapse" id="navbar-collapse"><ul class="nav navbar-nav"><li class="nav-item"><a class="scrollto" target="_self" href="/">首页</a></li></ul></div></nav></div></header><main class="page__container page__main"><aside class="page__sidebar"><div class="sidebar__block"><h3 class="block__title">简介</h3><p class="block__text">艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。</p></div><div class="sidebar__block"><h3 class="block__title">文章分类</h3><ul class="block-list"><li class="block-list-item"><a class="block-list-link" href="/categories/技术研究/">技术研究</a><span class="block-list-count">1</span></li><li class="block-list-item"><a class="block-list-link" href="/categories/微信开发教程/">微信开发教程</a><span class="block-list-count">7</span></li><li class="block-list-item"><a class="block-list-link" href="/categories/开源项目/">开源项目</a><span class="block-list-count">4</span></li></ul></div><div class="sidebar__block"><h3 class="block__title">最新文章</h3>
+        <ul class="block-list latest-post-list">
+            
+                    <li class="latest-post-item">
+                        <a href="/2018/05/31/get-wxapkg/" title="小程序源码反编译实战笔记">
+                            <div class="item__info">
+                                <h3 class="item__title">小程序源码反编译实战笔记</h3>
+                                <span class="item__text">2018-05-31</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/05/15/hexo-theme-studio/" title="开源一款hexo工作室主题">
+                            <div class="item__info">
+                                <h3 class="item__title">开源一款hexo工作室主题</h3>
+                                <span class="item__text">2018-05-15</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/05/08/douchat4-release/" title="douchat 4.0 新版发布，助力小程序后台开发">
+                            <div class="item__info">
+                                <h3 class="item__title">douchat 4.0 新版发布，助力小程序后台开发</h3>
+                                <span class="item__text">2018-05-08</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/01/09/gonews-release/" title="基于go+vue实现的golang每日新闻数据浏览与检索平台">
+                            <div class="item__info">
+                                <h3 class="item__title">基于go+vue实现的golang每日新闻数据浏览与检索平台</h3>
+                                <span class="item__text">2018-01-09</span>
+                            </div>
+                        </a>
+                    </li>
+                
+        </ul>
+    </div><div class="sidebar__block"><h3 class="block__title">文章标签</h3>
+        <ul class="block-list tag-list clearfix">
+            
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/chrome/">chrome</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/douchat/">douchat</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/go/">go</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/hexo/">hexo</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/vue/">vue</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/weiphp插件开发/">weiphp插件开发</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/反编译/">反编译</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/小程序/">小程序</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/微信开发/">微信开发</a>
+                    </li>  
+                
+        </ul>
+    </div></aside><div class="page__content"><article class="page__post"><header class="post__info"><h1 class="post__title">【分分钟上手weiphp插件开发】Vol.2——成语接龙插件：Idioms</h1><div class="post__mark"><div class="mark__block"><i class="fa fa-user"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="http://idoustudio.com" target="_blank">艾豆工作室</a></li></ul></div><div class="mark__block"><i class="fa fa-calendar-check-o"></i><ul class="mark__list clearfix"><li class="mark__item"><span>2015-01-09</span></li></ul></div><div class="mark__block"><i class="fa fa-tag"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="/tags/weiphp插件开发/">weiphp插件开发</a></li></ul></div><div class="mark__block"><i class="fa fa-eye"></i><ul class="mark__list clearfix"><li class="mark__item" id="busuanzi_container_page_pv" style="display: inline;"><span id="busuanzi_value_page_pv">8548</span>次</li></ul></div></div></header><div class="post__content"><p>上个月的某一天逛开源中国社区，无意间看到一个帖子：<a href="http://www.oschina.net/code/snippet_2286076_44811" target="_blank" rel="noopener">http://www.oschina.net/code/snippet_2286076_44811</a>，发帖的人分享了一个成语接龙的API，当时觉得挺好玩的，就拿来做了一个weiphp成语接龙插件。做这样的一个插件还是很简单的，没有数据模型，不需要管理后台，也不需要写控制器和视图层的代码，直接在微信交互模型中根据用户的发送内容调用API返回内容就行了，开发过程中用到了一个很nice的weiphp方法：set_user_status()。下面把这个weiphp成语接龙插件的开发流程分享出来，让各位看官对weiphp插件开发能有更深一层次的理解。学会了这个插件，那么对于weiphp官方提供的智能聊天、机器人学习时间这样的插件源代码就不难理解了，如果想自己开发天气查询、四六级查询、火车查询等功能就会得心应手了。无非就是编辑微信交互模型，根据用户输入调用相应的API嘛~</p>
+<p>废话不多说，走起~</p>
+<p>1、创建插件。在weiphp管理后台创建成语接龙插件，勾选安装后立即启用，不需要配置项和管理列表。点“确定”完成插件的创建。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/15.png" alt=""></p>
+<p>2、安装插件。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/22.png" alt=""></p>
+<p>3、检测插件是否成功安装。返回到weiphp插件管理后台，可以看到成语接龙插件已经成功安装，因为创建该插件的时候没有勾选需要配置项，所以此处没有显示插件配置页面。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/33.png" alt=""></p>
+<p>4、编写微信响应代码。</p>
+<p>首先，我们来调试一下成语接龙的接口</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/4.1.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/4.2.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/4.3.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/4.4.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/4.5.png" alt=""></p>
+<p>由调试结果我们可以发现，要使用户正常完成成语接龙，必须重复多次获得用户的输入关键词，当用户输入“成语接龙”时开始触发本插件，提示用户输入一个成语，然后获取用户的下一次输入，把用户的下一次输入提交到成语接龙接口地址，用file_get_contents()函数获得接口返回的内容，如果接口返回内容是一个成语的话，则继续获取用户的下一次输入，并把用户输入的关键词提交到接口，按此规律循环，多次获取用户的输入关键词；若接口返回的内容是不是一个成语，比如是“成语必须为4个汉字”之类的提示语时，则回复给用户的消息中提示用户重新输入一个成语或者输入“退出”退出成语接龙；当用户输入的关键词为“退出”时，则退出成语接龙插件，用户的下一次输入将不会提交到成语接龙接口。</p>
+<p>整个微信交互模型开发的思路我们弄清楚了，接下来就开始写代码，其中最关键的是用到weiphp封装的一个函数set_user_status(),这个函数的位置及用法如下图所示</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/52.png" alt=""></p>
+<p>这个函数的大概意思就是把用户的输入作为缓存存储起来，与用户的下一次输入进行关联，从而完成一次连贯输入操作。用法比较简单，传递的第一个参数为插件的标识名，传递的第二个参数为自定义的一个关键词。</p>
+<p>下面我们就用这个函数来写一下连贯输入操作：</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/62.png" alt=""></p>
+<p>5、微信测试。</p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/7.1.png" alt=""></p>
+<p><img src="http://ov13triio.bkt.clouddn.com/2015/01/7.2.png" alt=""></p>
+<div class="post-announce">感谢您的阅读，本文由 <a href="/">艾豆工作室</a> 版权所有。如若转载，请注明出处：艾豆工作室（<a href="/">http://idoustudio.com</a>）</div><div class="post__prevs"><div class="post__prev"><a href="/2015/01/05/weiphp-course-one/" title="【分分钟上手weiphp插件开发】Vol.1——第一个自定义weiphp插件：MyHello"><i class="iconfont icon-prev">【分分钟上手weiphp插件开发】Vol.1——第一个自定义weiphp插件：MyHello</i></a></div><div class="post__prev post__prev--right"><a href="/2015/01/10/weiphp-course-three/" title="【分分钟上手weiphp插件开发】Vol.3——留言板插件：Liuyanban">【分分钟上手weiphp插件开发】Vol.3——留言板插件：Liuyanban<i class="iconfont icon-next"></i></a></div></div></div></article></div></main><footer class="footer"><div class="container"><div class="row"><div class="col-md-5 col-sm-12 footer-info"><div class="logo-wrapper"><img class="logo" src="http://cdn.idoustudio.com/logo1.png"><span class="name">艾豆工作室</span><div class="slogan">艾豆工作室是一个专注于互联网技术开发与服务的团队，主要经营站点开发、微信开发、互联网产品设计与运营等业务。</div><div class="copyright">Copyright<span style="margin:0 3px">©</span>2020<a href="/" target="_self">深圳市任想科技有限公司</a>. All Rights Reserved.<span class="beian">粤ICP备18021766号-1</span></div></div></div><div class="col-md-2 footer-links"><h4>周边产品</h4><div class="links"><a class="link-item" href="https://www.douchat.net" target="_blank">豆信</a><a class="link-item" href="https://www.thinkwx.com" target="_blank">任想程序</a><a class="link-item" href="https://learnitwell.net" target="_blank">IT小课</a></div></div><div class="col-md-2 footer-links"><h4>友情链接</h4><div class="links"><a class="link-item" href="https://idoubi.cc" target="_blank">艾逗笔博客</a></div></div><div class="col-md-3 col-sm-12 footer-qr"><div class="row"><div class="col-md-6 col-xs-6 qr-item"><img src="http://blogcdn.idoustudio.com/pic/20201130130559.png"><p>加我微信，备注“工作室”</p></div></div></div></div></div></footer><script src="http://cdn.alloyteam.com/assets/libs/jquery-4dc834.js"></script><script src="http://cdn.alloyteam.com/assets/libs/bootstrap-1e25df.js"></script></div></body></html>
